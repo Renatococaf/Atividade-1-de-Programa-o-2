@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class ProdutosEstoque {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the Product Inventory System!!");
         System.out.println("Enter product data: ");
         System.out.println("Name: ");
         String nome = scanner.nextLine();
@@ -13,13 +12,7 @@ public class ProdutosEstoque {
         int quantidade = scanner.nextInt();
 
         Produto produto = new Produto(nome, preco, quantidade);
-        System.out.printf(
-                "Product Data: %s, $%.2f, %d units, Total: $%.2f\n",
-                produto.getNome(),
-                produto.getPreco(),
-                produto.getQuantidade(),
-                produto.getValorTotalEmEstoque()
-        );
+        System.out.println("Product data: " + produto);
 
         char resposta;
         do {
@@ -34,67 +27,19 @@ public class ProdutosEstoque {
                 int produtosAdd = scanner.nextInt();
                 produto.setQuantidade(produto.getQuantidade() + produtosAdd);
 
-                System.out.printf("Updated data: %s, $%.2f, %d units, Total: $%.2f\n",
-                        produto.getNome(),
-                        produto.getPreco(),
-                        produto.getQuantidade(),
-                        produto.getValorTotalEmEstoque()
-                );
-            } else if (resposta == 'b') {
+                System.out.println("Update data: " + produto);
+            }
+            else if (resposta == 'b') {
                 System.out.println("Enter the quantity to remove from stock:");
                 int produtosRem = scanner.nextInt();
                 produto.removerEstoque(produtosRem);
 
-                System.out.printf("Updated data: %s, $%.2f, %d units, Total: $%.2f\n",
-                        produto.getNome(),
-                        produto.getPreco(),
-                        produto.getQuantidade(),
-                        produto.getValorTotalEmEstoque()
-                );
+                System.out.println("Update data: " + produto);
             }
-        } while (resposta != 'c');
+        }
+        while (resposta != 'c');
 
         System.out.println("Stock update completed.");
         scanner.close();
-    }
-
-    public static class Produto {
-        private String nome;
-        private float preco;
-        private int quantidade;
-
-        public Produto(String nome, float preco, int quantidade) {
-            this.nome = nome;
-            this.preco = preco;
-            this.quantidade = quantidade;
-        }
-
-        public String getNome() {
-            return nome;
-        }
-
-        public float getPreco() {
-            return preco;
-        }
-
-        public int getQuantidade() {
-            return quantidade;
-        }
-
-        public float getValorTotalEmEstoque() {
-            return preco * quantidade;
-        }
-
-        public void setQuantidade(int quantidade) {
-            this.quantidade = quantidade;
-        }
-
-        public void removerEstoque(int quantidade) {
-            if (quantidade > this.quantidade) {
-                System.out.println("Insufficient stock to remove " + quantidade + " units.");
-            } else {
-                this.quantidade -= quantidade;
-            }
-        }
     }
 }
