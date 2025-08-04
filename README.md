@@ -6,4 +6,4 @@ Foi feito um programa para ler os dados de um produto em estoque (nome, preço e
 
 Data de publicação da atividade: 2025-07-29
 
-Quando terminei: 2025-08-03
+Quando terminei: 2025-08-04
