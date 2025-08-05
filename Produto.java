@@ -25,8 +25,8 @@ public class Produto {
         return preco * quantidade;
     }
 
-    public void addQuantidade(int quantidade) {
-        this.quantidade += quantidade;
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public void removerEstoque(int quantidade) {
@@ -43,3 +43,4 @@ public class Produto {
     }
 
 }
+
