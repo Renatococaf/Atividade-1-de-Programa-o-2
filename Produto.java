@@ -25,8 +25,8 @@ public class Produto {
         return preco * quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public void addQuantidade(int quantidade) {
+        this.quantidade += quantidade;
     }
 
     public void removerEstoque(int quantidade) {
@@ -41,4 +41,5 @@ public class Produto {
         return String.format("Product: %s, Price: $%.2f, Quantity: %d, Total Value: $%.2f",
                 nome, preco, quantidade, getValorTotalEmEstoque());
     }
+
 }
