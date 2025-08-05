@@ -25,7 +25,7 @@ public class ProdutosEstoque {
             if (resposta == 'a') {
                 System.out.println("Enter the quantity to add to stock:");
                 int produtosAdd = scanner.nextInt();
-                produto.setQuantidade(produto.getQuantidade() + produtosAdd);
+                produto.addQuantidade(produto.getQuantidade() + produtosAdd);
 
                 System.out.println("Update data: " + produto);
             }
@@ -42,4 +42,5 @@ public class ProdutosEstoque {
         System.out.println("Stock update completed.");
         scanner.close();
     }
+
 }
