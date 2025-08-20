@@ -43,6 +43,7 @@ public class ProdutosEstoque {
 
         System.out.println("Stock update completed.");
         scanner.close();
+        
     }
 
 }
