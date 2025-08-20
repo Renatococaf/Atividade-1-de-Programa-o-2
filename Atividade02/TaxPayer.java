@@ -18,5 +18,4 @@ public abstract class TaxPayer {
     }
 
     public abstract Double tax();
-
 }
