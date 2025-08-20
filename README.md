@@ -11,4 +11,4 @@
 
 
 ## 💡 Observações  
-A atividade 01 não esta com o prazo maximo de entrega pois houve um erro no github ao eu tentar organizar todas as atividades dentro de pastas para ficar melhor visualização pro professor, por isso a data ta errada por favor desconsiderar so a data da Atividade 01
+A atividade 01 não esta com o prazo maximo de entrega pois houve um erro no github quando eu fui tentar organizar todas as atividades dentro de pastas para ficar com melhor visualização pro professor, por isso a data ta errada por favor desconsiderar so a data da Atividade 01
