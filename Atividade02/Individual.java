@@ -18,4 +18,5 @@ class Individual extends TaxPayer {
             return getAnnualIncome() * 0.25 - (healthExpenditures * 0.5);
         }
     }
+
 }

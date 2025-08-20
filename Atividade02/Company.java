@@ -16,5 +16,6 @@ class Company extends TaxPayer {
             } else {
                 return getAnnualIncome() * 0.16;
             }
+
         }
     }
