@@ -50,5 +50,6 @@ public class TaxCalculator {
         System.out.printf("\nTOTAL TAXES: $ %.2f%n", totalTaxes);
 
         sc.close();
+        
     }
 }
